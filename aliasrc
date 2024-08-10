@@ -1,0 +1,13 @@
+# Fancy colors
+alias ls="ls --color=auto"
+alias grep="grep --color=auto"
+
+# Quick viewing/editing
+alias la="ls -lahH"
+alias zs="source $ZDOTDIR/.zshrc"
+alias zv="vim $ZDOTDIR/.zshrc"
+
+alias :q="exit"
+
+# NVIM
+alias vim="nvim"
