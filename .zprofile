@@ -2,15 +2,13 @@
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
-export XDG_RUNTIME_DIR="/tmp/$USER"
 
 # PATH
 PATH_EXTEND=(
   "$HOME/.local/bin" 
   "$XDG_DATA_HOME/bin"
-  "$XDG_DATA_HOME/texlive/2021/bin/x86_64-linux"
   "$XDG_DATA_HOME/cargo/bin"
-  "$XDG_DATA_HOME/sumneko_lua/bin"
+  "/usr/local/texlive/2024/bin/x86_64-linux"
 )
 
 PATH_TEMP=$PATH

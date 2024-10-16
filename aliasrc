@@ -11,3 +11,6 @@ alias :q="exit"
 
 # NVIM
 alias vim="nvim"
+
+# WGET CACHE
+alias wget="wget --hsts-file=$XDG_CACHE_HOME/wget-hsts"
