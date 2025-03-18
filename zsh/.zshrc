@@ -47,6 +47,7 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
 # Load completions
 autoload -U compinit && compinit
+_comp_options+=(globdots)
 
 # Fancy colors
 [ -e "$XDG_CONFIG_HOME/dircolors" ] && \

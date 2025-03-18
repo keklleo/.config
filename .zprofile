@@ -34,3 +34,6 @@ export NODE_REPL_HISTORY="$XDG_CACHE_HOME/node_repl_history"
 # RUST
 export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
+
+# IPYTHON
+export IPYTHONDIR="$XDG_CACHE_HOME/ipython"
