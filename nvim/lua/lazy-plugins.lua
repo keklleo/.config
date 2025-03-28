@@ -8,7 +8,7 @@ require('lazy').setup({
   require 'plugins.cmp',
   require 'plugins.tokyonight',
   require 'plugins.todo-comments',
-  -- require 'plugins.mini',
+  require 'plugins.mini',
   require 'plugins.treesitter',
   -- require 'plugins.debug',
   require 'plugins.indent_line',
