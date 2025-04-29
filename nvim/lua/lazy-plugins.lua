@@ -10,11 +10,12 @@ require('lazy').setup({
   require 'plugins.todo-comments',
   require 'plugins.mini',
   require 'plugins.treesitter',
-  -- require 'plugins.debug',
+  require 'plugins.debug',
   require 'plugins.indent_line',
   require 'plugins.lint',
   require 'plugins.autopairs',
   require 'plugins.neo-tree',
+  require 'plugins.vim-tmux-navigator',
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
