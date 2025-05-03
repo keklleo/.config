@@ -27,6 +27,7 @@ setopt autocd
 
 # Keybindings
 bindkey -v
+bindkey "^Y" autosuggest-accept
 
 # History 
 HISTSIZE=1000
@@ -42,12 +43,12 @@ setopt hist_save_no_dups
 setopt hist_find_no_dups
 
 # Completion styling
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+# TODO: Fix completion somehow bc it doesnt work
+# zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:lower:]}{[:upper:]}'
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
 # Load completions
 autoload -U compinit && compinit
-_comp_options+=(globdots)
 
 # Fancy colors
 [ -e "$XDG_CONFIG_HOME/dircolors" ] && \
