@@ -3,6 +3,4 @@ wslu
 zsh/histfile
 zsh/.zcompdump
 
-nvim/lazy-lock.json
-
 tmux/plugins
