@@ -1,6 +1,5 @@
 wslu
 
-zsh/histfile
-zsh/.zcompdump
-
 tmux/plugins
+
+fish/fish_variables
