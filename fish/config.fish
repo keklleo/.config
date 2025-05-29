@@ -1,3 +1,8 @@
+# XDG
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+
 if status is-interactive
     # vi key binds
     set -g fish_key_bindings fish_vi_key_bindings
