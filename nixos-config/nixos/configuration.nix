@@ -68,6 +68,11 @@
     nixPath = lib.mapAttrsToList (n: _: "${n}=flake:${n}") flakeInputs;
   };
 
+  environment.systemPackages = with pkgs; [
+    vim
+    wget
+  ];
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -115,12 +120,6 @@
 
   # Install firefox.
   programs.firefox.enable = true;
-
-  environment.systemPackages = with pkgs; [
-    vim
-    wget
-    git
-  ];
 
   networking.hostName = "desktop";
 
