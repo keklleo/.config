@@ -1,7 +1,11 @@
 # XDG
-export XDG_DATA_HOME="$HOME/.local/share"
-export XDG_CONFIG_HOME="$HOME/.config"
-export XDG_CACHE_HOME="$HOME/.cache"
+set -gx XDG_DATA_HOME "$HOME/.local/share"
+set -gx XDG_CONFIG_HOME "$HOME/.config"
+set -gx XDG_CACHE_HOME "$HOME/.cache"
+
+# Rust
+set -gx RUSTUP_HOME "$XDG_DATA_HOME/rustup"
+set -gx CARGO_HOME "$XDG_DATA_HOME/cargo"
 
 if status is-interactive
   # no greeting
