@@ -6,6 +6,7 @@ set -gx XDG_CACHE_HOME "$HOME/.cache"
 # Rust
 set -gx RUSTUP_HOME "$XDG_DATA_HOME/rustup"
 set -gx CARGO_HOME "$XDG_DATA_HOME/cargo"
+fish_add_path "$CARGO_HOME/bin"
 
 if status is-interactive
   # no greeting
